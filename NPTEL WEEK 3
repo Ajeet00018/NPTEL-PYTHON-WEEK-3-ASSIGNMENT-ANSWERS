@@ -1,0 +1,31 @@
+#solution1
+
+def remdup(l):
+  L=[]
+  for i in l:
+    if i not in L:
+      L.append(i)
+  return(L)
+
+#solution2
+
+def sumsquare(l):
+  odd_sum=0
+  even_sum=0
+  for a in l:
+    if a%2!=0:
+      odd_sum+=a*a
+    else:
+      even_sum+=a*a
+  return([odd_sum,even_sum])
+
+#solution3
+
+def transpose(m):
+  ans=list()
+  for i in range(len(m[0])):
+    a=[]
+    for j in range(len(m)):
+      a.append(m[j][i])
+    ans.append(a)
+  return(ans)
